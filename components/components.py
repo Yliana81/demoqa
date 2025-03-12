@@ -23,3 +23,7 @@ class WebElement:
     # текст из элемента считывайте так str(self.find_element().text)
     def get_text(self):
         return str(self.find_element().text)
+
+    def visible(self):
+        return self.find_element().is_displayed()
+
